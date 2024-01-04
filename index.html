@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="maindiv">
+        <div class="weather">
+                <h2 align="center" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;margin-top: 20px;">Weather Forcast</h2>
+            <div class="city">
+                <input type="text" id="city-name" placeholder="Enter City">
+                <button id="search" onclick="getWeatherData()"><img src="Search1.png" height="40px" alt="" style="border-radius: 20px;"></button>
+            </div>
+            <div id="info"align="center">
+                <img src="suny.png" alt="" height="120px" width="120px" id="weatherimg">
+                <div class="tempp"><h1 id="temp">0</h1><img src="cels.png" alt="" style="height: 50px;"></div>
+                <div class="tempp"><h3 id="city">city name</h3><img src="location1.png" alt="" style="height: 50px;"></div>
+            </div>
+            <div class="info2">
+                <div class="humadity">
+                    <img src="humadity.png" alt="">
+                    <h4>Humidity</h4>
+                    <h4 id="humadity-info">0</h4>
+                </div>
+                <div class="wind">
+                        <img src="wind.png" alt="">
+                        <h4 style="padding-left: 20px;">Wind</h4>
+                        <h4 style="padding-left: 20px;" id="wind-info">0km/h</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Weather.js"></script>
+</body>
+</html>
